@@ -28,7 +28,7 @@ log = logging.getLogger(__name__)
 
 class ModMail(commands.AutoShardedBot):
     def __init__(self, command_prefix, **kwargs):
-        self.command_prefix = command_prefix
+        self.command_prefix = !
         self.extra_events = {}
         self._BotBase__cogs = {}
         self._BotBase__extensions = {}
@@ -37,7 +37,7 @@ class ModMail(commands.AutoShardedBot):
         self._before_invoke = None
         self._after_invoke = None
         self._help_command = None
-        self.description = ""
+        self.description = "Playing modmail !help"
         self.owner_id = None
         self.owner_ids = set()
         self._skip_check = lambda x, y: x == y
